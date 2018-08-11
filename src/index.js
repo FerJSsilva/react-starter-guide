@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Clock from './components/Clock';
+import App from './components/App';
 
 import './assets/styles/style.sass';
 import './assets/styles/style.css';
 
 ReactDOM.render(
-  React.createElement(Clock),
+  React.createElement(App),
   document.getElementById('root'),
 );
 

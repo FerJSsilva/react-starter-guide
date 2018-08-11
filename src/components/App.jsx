@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from '../assets/images/logo.svg';
 import HelloWorld from './HelloWorld';
 import JsxSample from './JsxSample';
+import WelcomeProps from './WelcomeProps';
 
 class App extends Component {
   render() {
@@ -17,6 +18,8 @@ class App extends Component {
         <HelloWorld />
         <hr/>
         <JsxSample />
+        <hr/>
+        <WelcomeProps name="Player" id={1} />
       </div>
     );
   }
