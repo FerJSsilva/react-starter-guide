@@ -5,6 +5,17 @@ class Clock extends React.Component {
     date: new Date(),
   }
 
+  componentDidMount() {
+    this.timerID = setInterval(
+      () => this.updateClock(),
+      1000
+    );
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
   updateClock = () => {
     this.setState({
       date: new Date(),
@@ -15,7 +26,6 @@ class Clock extends React.Component {
     return (
       <div>
         <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
-        <button onClick={this.updateClock}>Update Clock</button>
       </div>
     );
   }
