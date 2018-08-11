@@ -4,6 +4,7 @@ import HelloWorld from './HelloWorld';
 import JsxSample from './JsxSample';
 import WelcomeProps from './WelcomeProps';
 import Clock from './Clock';
+import Statefull from './Statefull';
 
 class App extends Component {
   render() {
@@ -25,6 +26,9 @@ class App extends Component {
         <WelcomeProps name="Bot" id={1} />
         <hr/>
         <Clock />
+        <hr/>
+        <Statefull />
+        <hr/>
       </div>
     );
   }
