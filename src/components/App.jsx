@@ -3,6 +3,7 @@ import logo from '../assets/images/logo.svg';
 import HelloWorld from './HelloWorld';
 import JsxSample from './JsxSample';
 import WelcomeProps from './WelcomeProps';
+import Clock from './Clock';
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
         <WelcomeProps name="Player" id={2} />
         <WelcomeProps name="Bot" id={1} />
         <hr/>
+        <Clock />
       </div>
     );
   }

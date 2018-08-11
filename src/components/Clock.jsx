@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+class Clock extends React.Component {
+  state = {
+    date: new Date(),
+  }
 
-function tick() {
-    const element = (
+  render() {
+    return (
       <div>
-        <h1>Hello, world!</h1>
-        <h2>It is {new Date().toLocaleTimeString()}.</h2>
+        <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
       </div>
     );
-    return ReactDOM.render(element, document.getElementById('root'));
   }
-  
-  setInterval(tick, 1000);
+}
 
-export default tick;
+export default Clock;
