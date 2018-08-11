@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from '../assets/images/logo.svg';
 import HelloWorld from './HelloWorld';
+import JsxSample from './JsxSample';
 
 class App extends Component {
   render() {
@@ -14,6 +15,8 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <HelloWorld />
+        <hr/>
+        <JsxSample />
       </div>
     );
   }
