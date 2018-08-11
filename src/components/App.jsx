@@ -20,6 +20,9 @@ class App extends Component {
         <JsxSample />
         <hr/>
         <WelcomeProps name="Player" id={1} />
+        <WelcomeProps name="Player" id={2} />
+        <WelcomeProps name="Bot" id={1} />
+        <hr/>
       </div>
     );
   }
